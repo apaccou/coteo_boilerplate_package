@@ -1,0 +1,58 @@
+Theme Vitrine Responsive v1.0
+Theme Concrete5 par Alexandre PACCOU / Agence COTEO 2015.
+Inclus
++ uikit-2.19.0
++ Jquery v1.11.0
++ Modernizr 2.7.2
++ LESSPHP https://github.com/leafo/lessphp
++ Lightbox http://www.lokeshdhakar.com/projects/lightbox2/
++ Font Awesome 4.1.0
++ carouFredSel-6.2.1 http://docs.dev7studios.com/jquery-plugins/caroufredsel
++ Compatible power_slider_lite avec modification de view.php au niveau de l'appel javascript http://codeimpossible.com/2010/01/13/solving-document-ready-is-not-a-function-and-other-problems/
+
+Installer manuellement
+/elements/header_required.php ==> d�sactivation du chargement de jquery pour passage en jquery v1.11.0 uniquement en Front (dans le th�me)
+/single_pages/mentions-legales.php
+/single_pages/recherche.php
+/blocks/autonav/templates/bootstrap_breadcrumb.php
+/blocks/autonav/templates/bootstrap_menu.php
+/blocks/autonav/templates/plan_de_site.php
+/blocks/power_slider_lite ==> rendu responsive par des modifications dans le fichier source view.php
+/blocks/content ==> mod�les de mises en page du bloc content
+
+Fonctionnalit�s
++ mod�les de mises en page du bloc content
++ menu d�roulant automatique sur desktop
+
+Voir pour �volutions
++ mega menu
++ jeu de font sur nos serveurs
++ pr�parer au multilingue
++ nav compatible static bootstrap
++ nav dans le footer pour r�f comme sur http://paulrobertlloyd.com/
++ g�n�rateur de QRCode
++ indiquer dans le robots.txt et/ou .htacess la localisation du sitemap.xml
++ ? http://www.freemaptools.com/ ?
++ ? http://www.wufoo.com/landing/1/?utm_source=csstricks&utm_medium=ppc&cmpid=brand&utm_network=d&utm_term=csstricks600x600banner ?
++ Changement des images en background depuis ADMIN
++ vrai th�me mobile pour poids des images ?
++ mise en avant d'un �l�ment de menu comme sur figaro.fr ?
++ inspiration design http://www.vivino.com/
++ v�rifier compatibilit� tactile des sliders
++ http://www.eyecon.ro/bootstrap-datepicker/ ou plut�t https://github.com/eternicode/bootstrap-datepicker car mis � jour Boostrap3
++ menu un peu comme sur http://www.teslamotors.com/
++ suivre http://mvcss.github.io/styleguide/naming/
++ voir pour http://themepunch.com/revolution/
++ voir https://github.com/patrickheck/theme_blank_html5_boilerplate/blob/master/themes/blank_html5_boilerplate/elements/header.php
++ voir https://developers.google.com/web/starter-kit/
++ voir le .htaccess dans le th�me
++ checker https://checklists.opquast.com/seo
++ http://codepen.io/redfrost/pen/mzHjb ???
++ inspiration sur http://www.privatesportshop.com/
++ inspiration sur http://fr.fifa.com/worldcup/photos/index.html#2379652
++ http://blog.altima.fr/agence/loi-hamon/
++ https://developers.google.com/web/starter-kit/
++ http://andrewembler.com/posts/seo-tip-force-concrete5-pages-to-display-at-one-url/
++ https://www.mapbox.com
++ http://www.wihphotels.com/fr/
++ voir pour ajouter ou remplacer mpdf par https://github.com/KnpLabs/KnpSnappyBundle d�s version 5.7 de concrete
