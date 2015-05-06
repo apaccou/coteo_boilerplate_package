@@ -1,8 +1,8 @@
 <?php
 namespace Concrete\Package\CoteoBoilerplatePackage;
 
-use PageTheme;
-use Package;
+use Concrete\Core\Package\Package;
+use Concrete\Core\Page\Theme\Theme;
 
 defined('C5_EXECUTE') or die('Access Denied.');
 
