@@ -25,8 +25,6 @@ class Controller extends Package
   public function install()
   {
     $pkg = parent::install();
-
-    //Install the theme
-    $theme = PageTheme::add('theme_vitrine_uikit', $pkg);
+    Theme::add('theme_vitrine_uikit', $pkg);
   }
 }
