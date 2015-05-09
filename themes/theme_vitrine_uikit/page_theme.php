@@ -10,6 +10,7 @@ class PageTheme extends Theme
     public function registerAssets()
     {
         $this->requireAsset('uikit');
+        $this->requireAsset('css', 'styles');
         $this->requireAsset('javascript', 'jquery');
     }
 }
