@@ -1,0 +1,5 @@
+{
+    "require": {
+        "uikit/uikit": "~2.26.2"
+    }
+}
