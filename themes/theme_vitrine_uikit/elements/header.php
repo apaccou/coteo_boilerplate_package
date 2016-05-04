@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/bootstrap-modified.css">
     <?php echo $html->css($view->getStyleSheet('application.less')); ?>
-    <?php Loader::element('header_required', array('pageTitle' => $pageTitle)); ?>
+    <?php Loader::element('header_required', array('pageTitle' => isset($pageTitle) ? $pageTitle : '', 'pageDescription' => isset($pageDescription) ? $pageDescription : ''));?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
