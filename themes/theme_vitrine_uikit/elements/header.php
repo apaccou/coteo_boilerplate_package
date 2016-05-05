@@ -1,8 +1,7 @@
 <?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 <!DOCTYPE html>
 <html lang="<?php echo Localization::activeLanguage(); ?>">
-<head>
-    <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/bootstrap-modified.css">
+<head>    
     <?php echo $html->css($view->getStyleSheet('application.less')); ?>
     <?php Loader::element('header_required', array('pageTitle' => isset($pageTitle) ? $pageTitle : '', 'pageDescription' => isset($pageDescription) ? $pageDescription : ''));?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
