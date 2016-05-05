@@ -42,11 +42,11 @@ class Controller extends Package
         $al->register(
         'javascript', 'uikit', 'vendor/uikit/uikit/src/js/core/core.js'
         );
-        $al->register(
-            'css', 'uikit', 'vendor/uikit/uikit/src/less/uikit.less'
-        );
+        // $al->register(
+        //     'css', 'uikit', 'vendor/uikit/uikit/src/less/uikit.less'
+        // );
         $al->registerGroup('uikit', array(
-            array('css', 'uikit'),
+            //array('css', 'uikit'),
             array('javascript', 'uikit')
         ));
 
