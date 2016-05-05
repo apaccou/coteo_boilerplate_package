@@ -4,12 +4,12 @@ Base de développement pour Agence COTEO par Alexandre PACCOU
 
 Inclus
 ------
-uikit 2.26.2 via composer
+* uikit 2.26.2 via composer
 
 Animation
 ---------------------
-A voir : https://cdnjs.com/libraries/animate.css
-A voir : https://cdnjs.com/libraries/AniJS compatible Animate.css
+* A voir : https://cdnjs.com/libraries/animate.css
+* A voir : https://cdnjs.com/libraries/AniJS compatible Animate.css
 
 Accessibilité
 ---------------------
