@@ -5,6 +5,9 @@ $view->inc('elements/header.php');
 
 echo '<h1>'. $c->getCollectionName() .'</h1>';
 ?>
+
+
+
     <div class="uk-container uk-container-center">
         <div class="uk-block">
             <h3>Block</h3>

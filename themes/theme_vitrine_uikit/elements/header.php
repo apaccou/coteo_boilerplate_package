@@ -10,5 +10,5 @@
     <link rel="canonical" href="<?php echo $url = $c->getCollectionLink(); ?>" />
 
 </head>
-<body>
-<div class="<?php echo $c->getPageWrapperClass() ?>">
+<body id="top" class="<?php echo $c->getPageWrapperClass() ?>" itemscope itemtype="http://schema.org/WebPage">
+<div id="document">
