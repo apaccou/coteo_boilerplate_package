@@ -6,6 +6,10 @@ $view->inc('elements/header.php');
 echo '<h1>'. $c->getCollectionName() .'</h1>';
 ?>
 
+<main id="content" class="group" role="main">
+  <div class="main">
+  </div>
+</main>
 
 
     <div class="uk-container uk-container-center">
