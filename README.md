@@ -2,6 +2,10 @@ Package Concrete5 pour version 5.7
 =============
 Base de développement pour Agence COTEO par Alexandre PACCOU
 
+Compatibilité navigateurs
+-------------------------
+* A vérifier
+
 Inclus
 ------
 * uikit 2.26.2 via composer
@@ -14,6 +18,7 @@ Animation
 Accessibilité
 ---------------------
 * A voir : https://references.modernisation.gouv.fr/sites/default/files/referentiel_technique_rgaa3.0.pdf
+* A faire : fil d'ariane incluant les balises d'accessibilité
 
 Sécurité
 ---------------------
@@ -26,13 +31,20 @@ SEO
 * A voir : h1 unique par page
 * A voir : menu en bas du code
 * A voir : utilisation des micro-données schema.org
+* Fil d'ariane avec micro-data
 * A voir : accès aux page avec / et sans /
 * A voir : intégration de l'open graph http://www.yakaferci.com/open-graph/
+* A voir : Link checker
 
 Ergonomie
 ---------------------
 * Retour en haut de page
+* Fil d'ariane
 * A voir : smoothscroll sur le retour en haut de page
+
+Autres fonctionnalités
+---------------------
+* A voir : feuille de style pour l'impression
 
 Analytics
 ---------------------
