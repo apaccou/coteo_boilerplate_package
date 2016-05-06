@@ -13,13 +13,26 @@ Animation
 
 Accessibilité
 ---------------------
-A voir : https://references.modernisation.gouv.fr/sites/default/files/referentiel_technique_rgaa3.0.pdf
+* A voir : https://references.modernisation.gouv.fr/sites/default/files/referentiel_technique_rgaa3.0.pdf
 
 Sécurité
 ---------------------
-Déclaration du charset en premier dans le header
+* Déclaration du charset en premier dans le header
+* A voir : Supprimer le numéro de version dans le header
 
 SEO
 ---------------------
-Déclaration de l'URL canonique
-A voir : accès aux page avec / et sans /
+* Déclaration de l'URL canonique
+* A voir : h1 unique par page
+* A voir : menu en bas du code
+* A voir : utilisation des micro-données schema.org
+* A voir : accès aux page avec / et sans /
+* A voir : intégration de l'open graph http://www.yakaferci.com/open-graph/
+
+Ergonomie
+---------------------
+* Retour en haut de page
+* A voir : smoothscroll sur le retour en haut de page
+
+Analytics
+---------------------
