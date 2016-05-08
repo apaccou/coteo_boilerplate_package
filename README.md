@@ -51,3 +51,7 @@ Autres fonctionnalités
 
 Analytics
 ---------------------
+
+Autres
+-------
+* A terminer : Page Mention légales

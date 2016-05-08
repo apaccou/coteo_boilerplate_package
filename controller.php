@@ -1,11 +1,12 @@
 <?php
 namespace Concrete\Package\CoteoBoilerplatePackage;
 
-use Concrete\Core\Package\Package;
+use Package;
 use Concrete\Package\CoteoBoilerplatePackage\Src\UikitGridFramework;
 use Core;
-use Concrete\Core\Page\Theme\Theme;
-use Concrete\Core\Asset\AssetList;
+use PageTheme;
+use AssetList;
+use SinglePage;
 
 defined('C5_EXECUTE') or die('Access Denied.');
 
@@ -29,6 +30,7 @@ class Controller extends Package
     {
         $pkg = parent::install();
         Theme::add('theme_vitrine_uikit', $pkg);
+        SinglePage::add('/mentions-legales', $pkg);
     }
 
     public function on_start()
