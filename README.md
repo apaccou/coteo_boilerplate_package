@@ -28,6 +28,8 @@ Sécurité
 SEO
 ---------------------
 * Déclaration de l'URL canonique
+* Création d'un plan de site au format XML
+* A terminer (Changement de l'URL lors du passage en prod) : Référence au sitemap dans le fichier robots.txt
 * A voir : h1 unique par page
 * A voir : menu en bas du code
 * A voir : utilisation des micro-données schema.org
@@ -45,6 +47,7 @@ Ergonomie
 Autres fonctionnalités
 ---------------------
 * A voir : feuille de style pour l'impression
+* A voir : Géolocalisation aide sur http://www.mesuva.com.au/blog/concrete5/ ?
 
 Analytics
 ---------------------
