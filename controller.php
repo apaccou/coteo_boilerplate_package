@@ -2,9 +2,10 @@
 namespace Concrete\Package\CoteoBoilerplatePackage;
 
 use Package;
-use Concrete\Package\CoteoBoilerplatePackage\Src\UikitGridFramework;
+use \Concrete\Package\CoteoBoilerplatePackage\Src\UikitGridFramework;
 use Core;
-use PageTheme;
+use Page;
+use \Concrete\Core\Page\Theme\Theme;
 use AssetList;
 use SinglePage;
 
@@ -30,7 +31,13 @@ class Controller extends Package
     {
         $pkg = parent::install();
         Theme::add('theme_vitrine_uikit', $pkg);
-        SinglePage::add('/mentions-legales', $pkg);
+
+        //Install single page
+        $path = '/mentions-legales';
+        $sp = Page::getByPath($path);
+        if ($sp->isError() && $sp->getError() == COLLECTION_NOT_FOUND) {
+           $sp = SinglePage::add($path, $pkg);
+        }        
     }
 
     public function on_start()
