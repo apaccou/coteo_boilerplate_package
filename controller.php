@@ -14,7 +14,7 @@ defined('C5_EXECUTE') or die('Access Denied.');
 class Controller extends Package
 {
     protected $pkgHandle = 'coteo_boilerplate_package';
-    protected $appVersionRequired = '5.7.3';
+    protected $appVersionRequired = '5.7.4';
     protected $pkgVersion = '0.0.1';
 
     public function getPackageName()
@@ -24,7 +24,7 @@ class Controller extends Package
 
     public function getPackageDescription()
     {
-        return t("A package that installs a boilerplate theme for 5.7.3.");
+        return t("A package that installs a boilerplate theme for 5.7.4.");
     }
 
     public function install()
@@ -37,7 +37,7 @@ class Controller extends Package
         $sp = Page::getByPath($path);
         if ($sp->isError() && $sp->getError() == COLLECTION_NOT_FOUND) {
            $sp = SinglePage::add($path, $pkg);
-        }        
+        }
     }
 
     public function on_start()
