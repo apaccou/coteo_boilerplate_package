@@ -22,32 +22,34 @@ Accessibilité
 
 Sécurité
 ---------------------
-* Déclaration du charset en premier dans le header
+* OK : Déclaration du charset en premier dans le header
 * A voir : Supprimer le numéro de version dans le header
 
 SEO
 ---------------------
-* Déclaration de l'URL canonique
-* Création d'un plan de site au format XML
+* OK : Déclaration de l'URL canonique
+* OK : Création d'un plan de site au format XML
 * A terminer (Changement de l'URL lors du passage en prod) : Référence au sitemap dans le fichier robots.txt
 * A voir : h1 unique par page
 * A voir : menu en bas du code
 * A voir : utilisation des micro-données schema.org
-* Fil d'ariane avec micro-data
+* OK : Fil d'ariane avec micro-data
 * A voir : accès aux page avec / et sans /
 * A voir : intégration de l'open graph http://www.yakaferci.com/open-graph/
 * A voir : Link checker
+* A voir : http://documentation.concrete5.org/developers/working-with-pages/setting-a-page-s-title-from-a-controller
 
 Ergonomie
 ---------------------
-* Retour en haut de page
-* Fil d'ariane
+* OK : Retour en haut de page
+* OK : Fil d'ariane
 * A voir : smoothscroll sur le retour en haut de page
 
 Autres fonctionnalités
 ---------------------
 * A voir : feuille de style pour l'impression
 * A voir : Géolocalisation aide sur http://www.mesuva.com.au/blog/concrete5/ ?
+* A voir : https://github.com/typekit/webfontloader
 
 Analytics
 ---------------------
