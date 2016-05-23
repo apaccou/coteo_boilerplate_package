@@ -1,17 +1,18 @@
 <?php
 namespace Concrete\Package\CoteoBoilerplatePackage;
 
-use Package;
-use \Concrete\Package\CoteoBoilerplatePackage\Src\UikitGridFramework;
 use Core;
 use Page;
+use Package;
+use \Concrete\Package\CoteoBoilerplatePackage\Src\UikitGridFramework;
+use \Concrete\Package\CoteoBoilerplatePackage\Src\Installorupgradepackage;
 use \Concrete\Core\Page\Theme\Theme;
 use AssetList;
 use SinglePage;
 
 defined('C5_EXECUTE') or die('Access Denied.');
 
-class Controller extends Package
+class Controller extends UikitGridFramework
 {
     protected $pkgHandle = 'coteo_boilerplate_package';
     protected $appVersionRequired = '5.7.4';
@@ -19,26 +20,41 @@ class Controller extends Package
 
     public function getPackageName()
     {
-        return t("Concrete 5.7 Boilerplate Theme Package");
+        return t('Concrete 5.7 Boilerplate Theme Package');
     }
 
     public function getPackageDescription()
     {
-        return t("A package that installs a boilerplate theme for 5.7.4.");
+        return t('A package that installs a boilerplate theme for 5.7.4.');
     }
 
     public function install()
     {
         $pkg = parent::install();
+        $this->installOrUpgrade($pkg);
+
         Theme::add('theme_vitrine_uikit', $pkg);
 
         //Install single page
-        $path = '/mentions-legales';
-        $sp = Page::getByPath($path);
-        if ($sp->isError() && $sp->getError() == COLLECTION_NOT_FOUND) {
-           $sp = SinglePage::add($path, $pkg);
-        }
+        // $path = '/mentions-legales';
+        // $sp = Page::getByPath($path);
+        // if ($sp->isError() && $sp->getError() == COLLECTION_NOT_FOUND) {
+        //    $sp = SinglePage::add($path, $pkg);
+        // }
     }
+
+    public function upgrade()
+    {
+        $pkg = Package::getByHandle($this->pkgHandle);
+        $this->previousVersion = $pkg->getPackageVersion();
+        parent::upgrade();
+        $this->installOrUpgrade($pkg);
+    }
+
+    protected function installOrUpgrade($pkg)
+   {
+     $this->addSinglePage('/mentions-legales');
+   }
 
     public function on_start()
     {
