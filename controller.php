@@ -38,6 +38,12 @@ class Controller extends Package
         if ($sp->isError() && $sp->getError() == COLLECTION_NOT_FOUND) {
            $sp = SinglePage::add($path, $pkg);
         }
+        //Install single page
+        $path = '/plan-du-site';
+        $sp = Page::getByPath($path);
+        if ($sp->isError() && $sp->getError() == COLLECTION_NOT_FOUND) {
+           $sp = SinglePage::add($path, $pkg);
+        }
     }
 
     public function on_start()
