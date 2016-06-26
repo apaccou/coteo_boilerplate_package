@@ -5,4 +5,29 @@
 /* Import our theme variables. */
 @import "presets/defaults.less";
 
+/* https://checklists.opquast.com/seo/criteria/le-contenu-textuel-propre-a-chaque-page-precede-les-elements-de-navigation */
+
+#document {
+  .uk-flex;
+  .uk-flex-column;
+}
+#header {
+  .uk-flex-order-first;
+  background: red;
+}
+#breadcrumb {
+  background: orange;
+}
+#tools {
+  background: black;
+}
+#content {
+  background: pink;
+}
+#footer {
+  background: blue;
+}
+
+/* En cours de test */
 //*.ccm-page p {color: @link-color ;}*/
+.nav-path-selected a { background-color: red; }

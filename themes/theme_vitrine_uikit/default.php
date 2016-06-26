@@ -2,14 +2,13 @@
 defined('C5_EXECUTE') or die("Access Denied.");
 
 $view->inc('elements/header.php');
-
-echo '<h1>'. $c->getCollectionName() .'</h1>';
 ?>
 
-
-<nav id="breadcrumb" class="uk-container uk-container-center" aria-label="Vous êtes ici : " role="navigation">
-  <span class="">Vous êtes ici : </span>
-  <?php $this->inc('elements/breadcrumb.php'); ?>
+<nav id="breadcrumb" class="" aria-label="Vous êtes ici : " role="navigation">
+  <div class="uk-container uk-container-center">
+    <span class="">Vous êtes ici : </span>
+    <?php $this->inc('elements/breadcrumb.php'); ?>
+  </div>
 </nav>
 
 
@@ -18,13 +17,15 @@ echo '<h1>'. $c->getCollectionName() .'</h1>';
 </div>
 
 
-<main id="content" class="group" role="main">
+<main id="content" class="" role="main">
   <div class="main">
+    <h1><?php echo $c->getCollectionName(); ?></h1>
+    <p>Main</p>
   </div><!-- .main -->
 </main><!-- #content -->
 
 
-    <div class="uk-container uk-container-center">
+    <!-- <div class="uk-container uk-container-center">
         <div class="uk-block">
             <h3>Block</h3>
         </div>
@@ -46,16 +47,16 @@ echo '<h1>'. $c->getCollectionName() .'</h1>';
         <hr>
 
         <?php
-        $a = new Area('Main');
-        $a->enableGridContainer();
-        $a->display($c);
-
-        $a = new Area('Sidebar');
-        $a->setAreaGridMaximumColumns(12);
-        $a->display($c);
+        // $a = new Area('Main');
+        // $a->enableGridContainer();
+        // $a->display($c);
+        //
+        // $a = new Area('Sidebar');
+        // $a->setAreaGridMaximumColumns(12);
+        // $a->display($c);
         ?>
 
-    </div>
+    </div> -->
 
 <?php
 

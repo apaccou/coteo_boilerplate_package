@@ -12,11 +12,3 @@
 </head>
 <body id="top" class="<?php echo $c->getPageWrapperClass() ?>" itemscope itemtype="http://schema.org/WebPage">
 <div id="document">
-  <header id="header" role="banner">
-    <div class="header-top">
-    </div>
-    <div class="header-main">
-    </div>
-    <div class="header-bottom">
-    </div>
-  </header>

@@ -1,7 +1,19 @@
+<header id="header" role="banner">
+  <div class="header-top">
+    <?php //$view->inc('elements/navigation.php'); ?>
+  </div>
+  <div class="header-main">
+    <p>Header Main</p>
+  </div>
+  <div class="header-bottom">
+  </div>
+</header>
+
 <footer id="footer" role="contentinfo">
   <div class="footer-top">
   </div>
   <div class="footer-main">
+    <p>Footer Main</p>
   </div>
   <div class="footer-bottom">
     <p>Réalisation <a rel="license" href="http://wwww.coteo.com/">Agence Web Coteo</a> &copy; 2016<?php if(date('Y') != 2016) {echo ' - ' . date('Y');}?></p>
