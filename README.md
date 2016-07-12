@@ -45,11 +45,16 @@ Ergonomie
 * OK : Fil d'ariane
 * A voir : smoothscroll sur le retour en haut de page
 
+INTERNATIONALISATION
+---------------------
+* Balise hreflang : https://support.google.com/webmasters/answer/6059209
+
 Autres fonctionnalités
 ---------------------
 * A voir : feuille de style pour l'impression
 * A voir : Géolocalisation aide sur http://www.mesuva.com.au/blog/concrete5/ ?
 * A voir : https://github.com/typekit/webfontloader
+* A voir : Notifications bandeau largeur pleine page mais hauteur 1/4
 
 Analytics
 ---------------------
