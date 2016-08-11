@@ -24,6 +24,7 @@ Sécurité
 ---------------------
 * OK : Déclaration du charset en premier dans le header
 * A voir : Supprimer le numéro de version dans le header
+* A voir : Cheklist https://www.dareboost.com
 
 SEO
 ---------------------
@@ -48,6 +49,15 @@ Ergonomie
 INTERNATIONALISATION
 ---------------------
 * Balise hreflang : https://support.google.com/webmasters/answer/6059209
+
+Module Actualités
+---------------------
+* A voir : programmation de publications futures
+* A voir : automatisation de l'export vers Facebook, Twitter, ...
+
+Module Agenda
+-------------
+* A voir : fonctionnalités d'ajout au calendrier http://www.reedexpo.fr/salons/59408658-bijorhca-paris/
 
 Autres fonctionnalités
 ---------------------
